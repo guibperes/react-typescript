@@ -8,7 +8,7 @@ interface IUser {
   email: string;
 }
 
-export function App() {
+export const App: React.FC = () => {
   const [users, setUsers] = useState<IUser[]>([])
 
   useEffect(() => {
